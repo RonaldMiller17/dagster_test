@@ -8,7 +8,13 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "3.11"
 dagster = "^1.4.15"
+dagster-webserver = "^1.4.15"
 
+
+[[tool.poetry.source]]
+name = "grpcio"
+url = "https://github.com/dagster-io/build-grpcio/wiki/Wheels"
+priority = "primary"
 
 [build-system]
 requires = ["poetry-core"]
