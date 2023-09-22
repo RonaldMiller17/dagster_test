@@ -1,21 +1,25 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.dagster]
+module_name = "example"
+
 [tool.poetry]
-name = "dagster-test"
+name = "dagster_test"
 version = "0.1.0"
 description = ""
-authors = ["Ronald Miller <ronald.miller@me.com>"]
+authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.11"
+python = "~3.10.0"
 dagster = "^1.4.15"
 dagster-webserver = "^1.4.15"
-
+appengine-python-standard = "^1.1.4"
 
 [[tool.poetry.source]]
 name = "grpcio"
 url = "https://github.com/dagster-io/build-grpcio/wiki/Wheels"
 priority = "primary"
 
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
