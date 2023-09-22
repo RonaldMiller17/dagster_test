@@ -13,13 +13,17 @@ authors = []
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "~3.10.0"
+appengine-python-standard = "^1.1.4"
 dagster = "^1.4.15"
 dagster-webserver = "^1.4.15"
-appengine-python-standard = "^1.1.4"
+pandas = "^2.1.1"
+python = "~3.10.0"
+matplotlib = "^3.8.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.2"
 
 [[tool.poetry.source]]
 name = "grpcio"
 url = "https://github.com/dagster-io/build-grpcio/wiki/Wheels"
 priority = "primary"
-
