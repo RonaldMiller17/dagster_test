@@ -4,6 +4,7 @@ from dagster import schedule
 
 from example.jobs import test
 
+
 @schedule(
     cron_schedule="0 9 * * 1-5",
     job=test,

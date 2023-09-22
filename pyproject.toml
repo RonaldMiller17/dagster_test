@@ -17,6 +17,7 @@ appengine-python-standard = "^1.1.4"
 dagster = "^1.4.15"
 dagster-webserver = "^1.4.15"
 pandas = "^2.1.1"
+pandas-stubs = "^2.0.3.230814"
 python = "~3.10.0"
 matplotlib = "^3.8.0"
 
