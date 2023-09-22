@@ -1,0 +1,24 @@
+default_stages: [commit]
+repos:
+- repo: local
+  hooks:
+    - id: isort
+      name: isort
+      entry: isort 
+      language: python
+      types_or: [ cython, pyi, python ]
+      args: [ --filter-files ]
+      require_serial: true
+    - id: black
+      name: black
+      entry: black 
+      language: python
+      types_or: [ pyi, python ]
+      require_serial: true
+    - id: isort
+      name: isort
+      entry: isort 
+      language: python
+      types: [ python ]
+      require_serial: true
+    
